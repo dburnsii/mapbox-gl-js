@@ -17,11 +17,10 @@ import type Color from '../../style-spec/util/color';
 
 import type Formatted from '../../style-spec/expression/types/formatted';
 
-import type ResolvedImage from '../../style-spec/expression/types/resolved_image';
 
 export type PaintProps = {|
     "background-color": DataConstantProperty<Color>,
-    "background-pattern": CrossFadedProperty<ResolvedImage>,
+    "background-pattern": CrossFadedProperty<Image>,
     "background-opacity": DataConstantProperty<number>,
 |};
 
